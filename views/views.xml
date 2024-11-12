@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="bastaki_nextcloud_integration.list">
+      <field name="name">bastaki_nextcloud_integration list</field>
+      <field name="model">bastaki_nextcloud_integration.bastaki_nextcloud_integration</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </list>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="bastaki_nextcloud_integration.action_window">
+      <field name="name">bastaki_nextcloud_integration window</field>
+      <field name="res_model">bastaki_nextcloud_integration.bastaki_nextcloud_integration</field>
+      <field name="view_mode">list,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="bastaki_nextcloud_integration.action_server">
+      <field name="name">bastaki_nextcloud_integration server</field>
+      <field name="model_id" ref="model_bastaki_nextcloud_integration_bastaki_nextcloud_integration"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "list,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="bastaki_nextcloud_integration" id="bastaki_nextcloud_integration.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="bastaki_nextcloud_integration.menu_1" parent="bastaki_nextcloud_integration.menu_root"/>
+    <menuitem name="Menu 2" id="bastaki_nextcloud_integration.menu_2" parent="bastaki_nextcloud_integration.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="bastaki_nextcloud_integration.menu_1_list" parent="bastaki_nextcloud_integration.menu_1"
+              action="bastaki_nextcloud_integration.action_window"/>
+    <menuitem name="Server to list" id="bastaki_nextcloud_integration" parent="bastaki_nextcloud_integration.menu_2"
+              action="bastaki_nextcloud_integration.action_server"/>
+-->
+  </data>
+</odoo>
